@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fuzzy Subjective Structure Model (FSSM)</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true, theme: 'neutral'});</script>
+</head>
+<body>
+    <nav>
+        <h2>FSSM Model</h2>
+        <a href="#hero" class="active">Overview</a>
+        <a href="#generalization">Generalization Impasse</a>
+        <a href="#subjective-structures">Subjective Structures</a>
+        <a href="#beyond-average">Beyond the "Average"</a>
+        <a href="#arrow-reversal">Arrow-Reversal</a>
+        <a href="#four-claims">Four Causal Claims</a>
+        <a href="#dual-logic">Dual Logic</a>
+        <a href="#fuzzy-concept">Fuzzy Concept</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>The Fuzzy Subjective Structure Model</h1>
+            <p class="subtitle">Evaluating Causal Claims for Non-Deterministic Inference on Subjective Constructs</p>
+            <div class="glass-card hero-card">
+                <p><strong>Marek Deja</strong><br>
+                <span class="italic-text">Assistant Professor, Jagiellonian University</span></p>
+                <p style="margin-top: 1rem; font-size: 1rem; color: #7f8c8d; line-height: 1.4;">
+                    <strong>ISIC 2026: The Information Seeking in Context Conference</strong><br>
+                    1-4 June 2026 | Montréal, Canada
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 1: Generalization Impasse -->
+        <section id="generalization" class="reveal">
+            <h2>The Generalization Impasse in LIS</h2>
+            <div class="glass-card">
+                <p>Library and Information Science (LIS) boasts rich theoretical frameworks. However, empirical studies are often bound and limited by statistical and causal methods that default to broad, population-wide generalization.</p>
+                <p>A typical information behavior (IB) in context research project requires its own specific design and methodological development. The full potential of in-context research is not in chasing sweeping averages, but in <strong>supporting decision-making based on local evidence</strong>.</p>
+                <p>Rather than relying solely on statistical inference for generalization, we need methods designed to evaluate local evidence and context-specific configurations.</p>
+            </div>
+        </section>
+
+        <!-- Slide 2: Subjective Structures -->
+        <section id="subjective-structures" class="reveal">
+            <h2>Subjective Structures & Effects of Causes</h2>
+            <div class="glass-card">
+                <p class="accent-text">"Subjectivity is the very area where the effect of cases is located."</p>
+                <p>The <strong>Fuzzy Subjective Structure Model (FSSM)</strong> captures how the effects of a cause—whether <em>adjacent</em> (proximal interaction) or <em>coercive</em> (structural policies/norms)—reside within the subjective structure of human perception rather than acting as deterministic drivers.</p>
+                <p>Environmental and institutional factors do not directly force behavior; instead, their impact is shaped by how individuals subjectively perceive and experience these affordances and constraints.</p>
+            </div>
+        </section>
+
+        <!-- Slide 3: Beyond the "Average" -->
+        <section id="beyond-average" class="reveal">
+            <h2>Beyond the "Perfect Average"</h2>
+            <div class="glass-card">
+                <p>Traditional regression models rely on mean estimates that represent a vague abstraction of a "perfect human being"—which none of us is. Such approaches discard individual autonomy of thoughts.</p>
+                <p>To respect this autonomy, we need <strong>subjectivity mapping</strong> that assesses:</p>
+                <ul>
+                    <li><strong>Typicality:</strong> Regularities that hold for nearly all cases in a group.</li>
+                    <li><strong>Necessity:</strong> Non-compensatory system bottlenecks (critical gatekeepers).</li>
+                    <li><strong>Probability:</strong> The likelihood of an individual reacting or behaving as an effect of context causes.</li>
+                </ul>
+                <p>FSSM maps these dynamics by looking at <em>how far and how close</em> individuals are toward a modeled desirable threshold, rather than calculating aggregate averages that mask individual realities.</p>
+            </div>
+        </section>
+
+        <!-- Slide 4: Arrow-Reversal & Context-First Skeleton -->
+        <section id="arrow-reversal" class="reveal">
+            <h2>The Arrow-Reversal & Context-First Skeleton</h2>
+            <div class="glass-card">
+                <p>Information behavior theory dictates: <span class="accent-text">Context &rarr; Perception &rarr; Behavior</span>. Yet, regression models often violate this, treating perceptions as drivers of other perceptions or reversing the causal order for statistical convenience.</p>
+                
+                <div class="mermaid-wrapper">
+                    <div class="mermaid">
+                        graph LR
+                            subgraph Incorrect [Arrow-Reversal Problem]
+                                S1(Self-Efficacy) -.->|Inverted| C1(Culture)
+                            end
+                            
+                            subgraph Correct [FSSM Causal Skeleton]
+                                C2(Context: Culture/Mgmt) --> S2(Perception: Self-Efficacy)
+                                S2 --> B2(Behavior: Collaboration)
+                            end
+                            
+                            style S1 fill:#fff5f5,stroke:#ffb3b3,stroke-width:2px,color:#2c3e50
+                            style C1 fill:#fff5f5,stroke:#ffb3b3,stroke-width:2px,color:#2c3e50
+                            style C2 fill:#f0fbf0,stroke:#8fbc8f,stroke-width:2px,color:#2c3e50
+                            style S2 fill:#f0fbf0,stroke:#8fbc8f,stroke-width:2px,color:#2c3e50
+                            style B2 fill:#f0fbf0,stroke:#8fbc8f,stroke-width:2px,color:#2c3e50
+                    </div>
+                </div>
+                <p>FSSM enforces the theoretical skeleton: environmental factors (Information Culture and Management) act as upstream enabling context conditions, which shape downstream behavior through intermediate subjective perceptions.</p>
+            </div>
+        </section>
+
+        <!-- Slide 5: Four Causal Claims -->
+        <section id="four-claims" class="reveal">
+            <h2>The Four Causal Claims of FSSM</h2>
+            <div class="grid">
+                <div class="glass-card">
+                    <h3>1. Typical Sufficiency (&alpha;)</h3>
+                    <p><em>"If X is high, Y is typically high."</em> Evaluates whether organizational policies usually suffice to produce the behavior, allowing rare exceptions.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>2. Typical Necessity (&epsilon;)</h3>
+                    <p><em>"If Y is high, X is rarely low."</em> Identifies non-compensatory bottlenecks—conditions without which high outcomes are impossible.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>3. Probabilistic Sufficiency (&Delta; / Uplift)</h3>
+                    <p><em>"Does raising X increase the probability of high Y?"</em> Measures the probability-scale contrast after adjusting for covariates.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>4. Probabilistic Necessity (&beta;)</h3>
+                    <p><em>"If X is low, high Y is unlikely."</em> Converts the bottleneck constraint into a concrete, counterfactual risk statement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Dual Logic -->
+        <section id="dual-logic" class="reveal">
+            <h2>Dual Logic: Latent vs. Composite Route</h2>
+            <div class="glass-card">
+                <p>FSSM offers a flexible, dual-route design to address different analytical goals and data realities:</p>
+                <ul>
+                    <li><strong>Route A (Latent Variable Route - PLS-SEM + NCA):</strong> Extends latent structural models. Binds structural path estimation with necessity bottleneck diagnostics to achieve both population generalization and subjective structure exploration.</li>
+                    <li><strong>Route B (Raw Composite Route - NCA + Case Weighting):</strong> Bypasses latent modeling demands using raw composites. Enables a case-level <strong>"finding people" approach</strong>, allowing researchers to study teams, even small teams, precisely to diagnose their local information needs and behaviors.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 7: Fuzzy Concept & Subjectivity Mapping -->
+        <section id="fuzzy-concept" class="reveal">
+            <h2>Fuzzy Concept & Subjectivity Mapping</h2>
+            <div class="glass-card">
+                <p>Continuous latent and composite scores are mapped onto a fuzzy membership interval <strong>[0, 1]</strong> relative to empirical thresholds and bottlenecks:</p>
+                <ul>
+                    <li><strong>&mu;<sub>S</sub>(x):</strong> The degree to which an individual case meets the necessary context bottleneck.</li>
+                    <li><strong>&mu;<sub>Y</sub>(y):</strong> The degree of outcome achievement.</li>
+                </ul>
+                <p>This fuzzy mapping prevents cases near arbitrary cutoffs from distorting the results. It honors individual autonomy by showing exactly how close or how far each unique case is from the necessary thresholds, enabling true person-in-context interpretation.</p>
+            </div>
+        </section>
+
+        <!-- Contact/Thank You Section -->
+        <section id="contact" class="reveal">
+            <h2>Thank You</h2>
+            <div class="glass-card">
+                <p>FSSM moves information behavior research beyond the abstraction of the average human toward actionable, localized evidence.</p>
+                <p class="contact-info">
+                    <strong>Marek Deja</strong><br>
+                    Assistant Professor, Jagiellonian University<br>
+                    Email: <a href="mailto:marek.deja@uj.edu.pl" class="accent-link">marek.deja@uj.edu.pl</a><br>
+                    FSSM Project & Updates: <a href="https://osf.io/b8maq/" class="accent-link">osf.io/b8maq/</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
