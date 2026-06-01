@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fuzzy Subjective Structure Model (FSSM)</title>
+    <title>Navigating subjectivity in causal context: a non-deterministic approach for information behaviour research</title>
     <link rel="icon" href="data:,">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -38,8 +38,8 @@
     <main>
         <!-- Hero Section -->
         <section id="hero">
-            <h1>The Fuzzy Subjective Structure Model</h1>
-            <p class="subtitle">Evaluating Causal Claims for Non-Deterministic Inference on Subjective Constructs</p>
+            <h1>Navigating subjectivity in causal context</h1>
+            <p class="subtitle">A non-deterministic approach for information behaviour research</p>
             <div class="glass-card hero-card">
                 <p>Marek Deja<br>
                 <span class="italic-text">Assistant Professor, Jagiellonian University</span></p>
@@ -171,7 +171,7 @@
             <div class="grid">
                 <div class="glass-card">
                     <h3>1. Typical Sufficiency (&alpha;)</h3>
-                    <p><em>"If $X \geq t_X$, then $Y \geq t_Y$ for most cases."</em> Evaluates whether context conditions usually suffice to produce the behaviour, allowing rare exceptions.</p>
+                    <p><em>"If $X \geq T_X$, then $Y \geq T_Y$ for most cases."</em> Evaluates whether context conditions usually suffice to produce the behaviour, allowing rare exceptions.</p>
                 </div>
                 <div class="glass-card">
                     <h3>2. Typical Necessity (&varepsilon;)</h3>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="glass-card">
                     <h3>3. Probabilistic Sufficiency (&Delta; / Uplift)</h3>
-                    <p><em>"Does raising $X$ above $t_X$ increase the probability of high $Y$?"</em> Probability-scale contrast on an IPW-balanced pseudo-population.</p>
+                    <p><em>"Does raising $X$ above $T_X$ increase the probability of high $Y$?"</em> Probability-scale contrast on an IPW-balanced pseudo-population.</p>
                 </div>
                 <div class="glass-card">
                     <h3>4. Probabilistic Necessity (&beta;)</h3>
@@ -192,23 +192,23 @@
         <section id="claims-formulas" class="reveal">
             <h2>Four Causal Claims: Mathematical Form</h2>
             <div class="glass-card">
-                <p>All four claims are anchored to the same empirical thresholds: $t_X$ (NCA-derived bottleneck) and $t_Y$ (desired outcome level). $\Pr^*$ denotes probability on the IPW-balanced pseudo-population; $w_i$ are normalized case weights.</p>
+                <p>All four claims are anchored to the same empirical thresholds: $T_X$ (NCA-derived bottleneck) and $T_Y$ (desired outcome level). $\Pr^*$ denotes probability on the IPW-balanced pseudo-population; $w_i$ are normalized case weights.</p>
                 <div class="formula-grid">
                     <div class="formula-block">
                         <p class="formula-label">Typical Sufficiency (&alpha;)</p>
-                        $$\alpha = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq t_X)\,\mathbf{1}(y_i \geq t_Y)}{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq t_X)} \;\geq\; 0.85$$
+                        $$\alpha = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq T_X)\,\mathbf{1}(y_i \geq T_Y)}{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq T_X)} \;\geq\; 0.85$$
                     </div>
                     <div class="formula-block">
                         <p class="formula-label">Typical Necessity (&varepsilon;)</p>
-                        $$\varepsilon = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq t_Y)\,\mathbf{1}(x_i < t_X)}{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq t_Y)} \;\leq\; 0.15$$
+                        $$\varepsilon = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)\,\mathbf{1}(x_i < T_X)}{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)} \;\leq\; 0.15$$
                     </div>
                     <div class="formula-block">
                         <p class="formula-label">Probabilistic Sufficiency (&Delta;)</p>
-                        $$\Delta = \Pr^*(Y \!\geq\! t_Y \mid X \!\geq\! t_X) - \Pr^*(Y \!\geq\! t_Y \mid X \!<\! t_X)$$
+                        $$\Delta = \Pr^*(Y \!\geq\! T_Y \mid X \!\geq\! T_X) - \Pr^*(Y \!\geq\! T_Y \mid X \!<\! T_X)$$
                     </div>
                     <div class="formula-block">
                         <p class="formula-label">Probabilistic Necessity (&beta;)</p>
-                        $$\beta = \Pr^*(Y \geq t_Y \mid X < t_X) \;\leq\; 0.20$$
+                        $$\beta = \Pr^*(Y \geq T_Y \mid X < T_X) \;\leq\; 0.20$$
                     </div>
                 </div>
             </div>
@@ -221,7 +221,7 @@
                 <p>FSSM offers a flexible, dual-route design to address different analytical goals and data realities:</p>
                 <ul>
                     <li>Route A (Latent Variable Route — PLS-SEM + NCA): Extends latent structural models. Binds structural path estimation with necessity bottleneck diagnostics to achieve both population generalization and case-wise subjective structure exploration. The latent variable route provides a sound ground for causal generalization with reversal to case-level causal detection.</li>
-                    <li>Route B (Raw Composite Route — NCA + Case Weighting): Bypasses latent modelling using raw composites. NCA identifies the threshold $t_X$ for a specific desired $t_Y$, and every respondent is located on the resulting fuzzy membership scale. Enables a case-level "finding people" approach—allowing researchers to study teams, even small ones, to diagnose local information needs and behaviours precisely.</li>
+                    <li>Route B (Raw Composite Route — NCA + Case Weighting): Bypasses latent modelling using raw composites. NCA identifies the threshold $T_X$ for a specific desired $T_Y$, and every respondent is located on the resulting fuzzy membership scale. Enables a case-level "finding people" approach—allowing researchers to study teams, even small ones, to diagnose local information needs and behaviours precisely.</li>
                 </ul>
             </div>
         </section>
@@ -246,7 +246,7 @@
                 <p>Continuous latent and composite scores are mapped onto a fuzzy membership interval $[0, 1]$ relative to empirical thresholds and bottlenecks:</p>
                 <ul>
                     <li>$\mu_S(x)$: the degree to which an individual case meets the necessary context bottleneck—how close a case is to crossing the enabling threshold.</li>
-                    <li>$\mu_Y(y)$: the degree of outcome achievement relative to the desired target $t_Y$.</li>
+                    <li>$\mu_Y(y)$: the degree of outcome achievement relative to the desired target $T_Y$.</li>
                 </ul>
                 <p>This fuzzy mapping prevents cases near arbitrary cutoffs from distorting the results. It honours individual autonomy by showing exactly how close or far each case is from the necessary threshold—enabling true person-in-context interpretation without binary categorization.</p>
             </div>
@@ -256,10 +256,10 @@
         <section id="mapping-formulas" class="reveal">
             <h2>Fuzzy Membership: Mathematical Form</h2>
             <div class="glass-card">
-                <p>Membership in the necessary bottleneck for condition $X$—how close a case is to the enabling threshold $t_X$:</p>
-                $$\mu_S(x_i) = \begin{cases} 0 & x_i = 0 \\[6pt] \dfrac{x_i}{t_X} & 0 < x_i < t_X \\[10pt] 1 & x_i \geq t_X \end{cases}$$
+                <p>Membership in the necessary bottleneck for condition $X$—how close a case is to the enabling threshold $T_X$:</p>
+                $$\mu_S(x_i) = \begin{cases} 0 & x_i = 0 \\[6pt] \dfrac{x_i}{T_X} & 0 < x_i < T_X \\[10pt] 1 & x_i \geq T_X \end{cases}$$
                 <p>Degree of outcome achievement for $Y$:</p>
-                $$\mu_Y(y_i) = \min\!\left(1,\; \frac{y_i}{t_Y}\right)$$
+                $$\mu_Y(y_i) = \min\!\left(1,\; \frac{y_i}{T_Y}\right)$$
                 <p>The pair $\bigl(\mu_S(x_i),\,\mu_Y(y_i)\bigr)$ locates every respondent on what we might call a self-treatment scale. Rather than a discrete, time-bounded intervention, the institutional environment is an ongoing exogenous context that continuously shapes each individual's endogenous subjective structure. Threshold-seeking replaces point-treatment logic: the question is not "did an intervention occur?" but "how far is this person from the enabling threshold?"—closer to Li and Pearl's Probability of Necessity and Probability of Sufficiency in spirit, but expressed as a graded, person-in-context reading over an ongoing environmental condition.</p>
             </div>
         </section>
