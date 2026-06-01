@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #faf9f6; 
-    --text-color: #2c3e50; 
-    --accent-color: #c5a059; 
+    --bg-color: #faf9f6;
+    --text-color: #2c3e50;
+    --accent-color: #c5a059;
     --glass-bg: rgba(255, 255, 255, 0.6);
     --glass-border: rgba(0, 0, 0, 0.05);
     --nav-width: 280px;
@@ -33,16 +33,17 @@ nav {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     z-index: 100;
     box-shadow: 2px 0 15px rgba(0,0,0,0.02);
+    overflow-y: auto;
 }
 
 nav h2 {
     color: #1f4068;
     font-size: 1.4rem;
     letter-spacing: 1px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -50,8 +51,8 @@ nav h2 {
 nav a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.05rem;
-    padding: 0.6rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
     opacity: 0.7;
@@ -83,6 +84,10 @@ section {
     animation: fadeIn 1s forwards;
 }
 
+section.formula-section {
+    min-height: 50vh;
+}
+
 h1 {
     font-size: 3.8rem;
     line-height: 1.2;
@@ -105,6 +110,13 @@ h2 {
     border-bottom: 1px solid var(--accent-color);
     padding-bottom: 0.5rem;
     display: inline-block;
+}
+
+h3 {
+    font-size: 1.15rem;
+    color: #1f4068;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
 }
 
 p, li {
@@ -156,6 +168,7 @@ ul {
     text-decoration: underline;
 }
 
+/* Four-claims grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -163,14 +176,47 @@ ul {
     margin-top: 1rem;
 }
 
-.mermaid-wrapper {
+/* Formula 2×2 grid */
+.formula-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .formula-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.formula-block {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 1.4rem 1.6rem;
+    text-align: center;
+}
+
+.formula-label {
+    font-size: 1rem;
+    color: #1f4068;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+/* SVG DAG wrapper */
+.dag-wrapper {
     margin: 2rem 0;
-    padding: 2rem;
+    padding: 1.5rem 1rem;
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.03);
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow-x: auto;
 }
 
 @keyframes fadeIn {
@@ -194,4 +240,9 @@ ul {
 .accent-text {
     color: var(--accent-color);
     font-style: italic;
+}
+
+/* MathJax display override for presentation readability */
+.MathJax {
+    font-size: 1.05em !important;
 }
