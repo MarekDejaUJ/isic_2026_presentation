@@ -24,7 +24,7 @@
         <a href="#hero" class="active">Overview</a>
         <a href="#generalization">Generalization impasse</a>
         <a href="#subjective-structures">Subjective structures</a>
-        <a href="#beyond-average">Beyond the "Average"</a>
+        <a href="#beyond-average">Beyond the "average"</a>
         <a href="#arrow-reversal">Arrow-reversal</a>
         <a href="#four-claims">Four causal claims</a>
         <a href="#claims-formulas">Claims: formulas</a>
@@ -54,9 +54,12 @@
         <section id="generalization" class="reveal">
             <h2>The generalization impasse in LIS</h2>
             <div class="glass-card">
-                <p>Library and Information Science has built rich theoretical frameworks. Yet empirical studies are often bound by statistical and causal methods that default to broad, population-wide generalization.</p>
-                <p>A typical information behaviour research project in context requires its own specific design and methodological development. The full potential of in-context research is not in chasing sweeping averages, but in supporting decision-making based on local evidence.</p>
-                <p>Rather than relying solely on statistical inference for generalization, we need methods designed to evaluate local evidence and context-specific configurations.</p>
+                <ul>
+                    <li>Direction: fit statistics cannot decide whether information behaviour causes culture, or culture enables behaviour.</li>
+                    <li>Logic: average effects do not show whether a context condition is a non-compensatory bottleneck.</li>
+                    <li>Aggregation: population estimates can hide the specific person, team, library, or institutional configuration that matters.</li>
+                </ul>
+                <p>FSSM evaluates context-specific configurations by separating typical and probabilistic forms of sufficiency and necessity.</p>
             </div>
         </section>
 
@@ -66,6 +69,7 @@
             <div class="glass-card">
                 <p class="accent-text">"Subjectivity is the very area where the effect of causes is located."</p>
                 <p>The Fuzzy Subjective Structure Model captures how the effects of a cause, whether <em>adjacent</em> (proximal interaction) or <em>coercive</em> (structural policies, culture, and norms), reside within the subjective structure of human perception rather than acting as deterministic drivers.</p>
+                <p>It evaluates subjective structure by applying rules about effects of causes: sufficiency, necessity, adjusted probability contrasts, and case membership.</p>
                 <p>Environmental and institutional factors do not directly force behaviour; their impact is shaped by how individuals subjectively perceive and experience affordances and constraints.</p>
             </div>
         </section>
@@ -77,20 +81,20 @@
                 <p>Regression models produce parameter estimates: central tendencies across a population that abstract away the individual variation information behaviour research most needs to understand.</p>
                 <p>FSSM shifts focus to subjectivity mapping, assessing:</p>
                 <ul>
-                    <li>Sufficiency: which context conditions typically enable the outcome.</li>
-                    <li>Typicality: regularities that hold for nearly all cases in a group.</li>
-                    <li>Necessity: non-compensatory bottlenecks (critical gatekeepers).</li>
-                    <li>Probability: individual likelihood given context conditions.</li>
+                    <li>Typical sufficiency: the outcome usually follows when $X$ clears $T_X$.</li>
+                    <li>Typical necessity: high outcomes rarely occur below the required level.</li>
+                    <li>Probabilistic sufficiency: adjusted uplift when $X$ clears $T_X$.</li>
+                    <li>Probabilistic necessity: high-outcome probability when $X$ is insufficient.</li>
                 </ul>
                 <p>FSSM maps how far or close each person is from an empirically grounded threshold, rather than computing aggregate summaries that mask individual positions.</p>
             </div>
         </section>
 
-        <!-- Slide 4: Arrow-Reversal & Context-First Skeleton -->
+        <!-- Slide 4: Arrow-Reversal & Context-First Structure -->
         <section id="arrow-reversal" class="reveal">
-            <h2>Arrow-reversal &amp; context-first skeleton</h2>
+            <h2>Arrow-reversal &amp; context-first structure</h2>
             <div class="glass-card">
-                <p>Information behaviour theory dictates: <span class="accent-text">Context &rarr; Perception &rarr; Behaviour</span>. Yet regression models often violate this, treating perceptions as drivers of other perceptions or reversing the causal order for statistical convenience.</p>
+                <p>Information behaviour theory dictates: <span class="accent-text">Context &rarr; Perception &rarr; Behaviour</span>. Yet models can still place behaviour upstream and treat a symmetric association as if it established causal direction.</p>
 
                 <div class="dag-wrapper">
                     <svg viewBox="0 0 820 295" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:0 auto">
@@ -106,10 +110,10 @@
                         <!-- Section label: Incorrect -->
                         <text x="14" y="26" font-family="Lora,serif" font-size="12.5" fill="#c0392b" font-style="italic">Incorrect: Arrow-Reversal Problem</text>
 
-                        <!-- Info. Behavior node (incorrect) -->
+                        <!-- Info. Behaviour node (incorrect) -->
                         <rect x="60" y="36" width="145" height="44" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1.8"/>
                         <text x="132" y="56" text-anchor="middle" font-family="Lora,serif" font-size="12.5" fill="#c0392b">Info.</text>
-                        <text x="132" y="72" text-anchor="middle" font-family="Lora,serif" font-size="12.5" fill="#c0392b">Behavior</text>
+                        <text x="132" y="72" text-anchor="middle" font-family="Lora,serif" font-size="12.5" fill="#c0392b">Behaviour</text>
 
                         <!-- Dashed reversed arrow -->
                         <line x1="207" y1="58" x2="300" y2="58" stroke="#c0392b" stroke-width="2" stroke-dasharray="7,4" marker-end="url(#arr-red)"/>
@@ -120,7 +124,7 @@
                         <text x="375" y="62" text-anchor="middle" font-family="Lora,serif" font-size="12.5" fill="#c0392b">Info. Culture</text>
 
                         <!-- Section label: Correct -->
-                        <text x="14" y="146" font-family="Lora,serif" font-size="12.5" fill="#1e7e34" font-style="italic">Correct: FSSM Context-First Skeleton</text>
+                        <text x="14" y="146" font-family="Lora,serif" font-size="12.5" fill="#1e7e34" font-style="italic">Correct: FSSM Context-First Structure</text>
 
                         <!-- Info. Management -->
                         <rect x="12" y="158" width="130" height="46" rx="6" fill="#f0fbf0" stroke="#27ae60" stroke-width="1.8"/>
@@ -149,10 +153,10 @@
 
                         <line x1="600" y1="181" x2="618" y2="181" stroke="#1e7e34" stroke-width="2" marker-end="url(#arr-green)"/>
 
-                        <!-- Info. Behavior (correct endpoint) -->
+                        <!-- Info. Behaviour (correct endpoint) -->
                         <rect x="620" y="158" width="130" height="46" rx="6" fill="#f0fbf0" stroke="#27ae60" stroke-width="1.8"/>
                         <text x="685" y="177" text-anchor="middle" font-family="Lora,serif" font-size="11.5" fill="#1e7e34">Info.</text>
-                        <text x="685" y="195" text-anchor="middle" font-family="Lora,serif" font-size="11.5" fill="#1e7e34">Behavior</text>
+                        <text x="685" y="195" text-anchor="middle" font-family="Lora,serif" font-size="11.5" fill="#1e7e34">Behaviour</text>
 
                         <!-- Variable labels -->
                         <text x="77" y="232" text-anchor="middle" font-family="Lora,serif" font-size="11" fill="#95a5a6" font-style="italic">M</text>
@@ -163,7 +167,7 @@
                     </svg>
                 </div>
 
-                <p>A common modelling choice puts information sharing on the left: individual and group sharing predict a richer, more open information culture. Associatively this holds, people who share information tend to inhabit open cultures. In causal terms, however, sharing does not produce open culture. The relation has a backdoor through information management, and mediators such as empowerment and information literacy self-efficacy sit between culture and sharing behaviour. Without closing that backdoor, any path from sharing to culture is a confounded association. FSSM enforces the context-first skeleton: Management and Culture as upstream enabling conditions; Self-Efficacy and Empowerment as intermediate perceptions; Information Behaviour as the downstream outcome.</p>
+                <p>A common modelling choice puts information sharing on the left: individual and group sharing predict a richer, more open information-sharing culture. Associatively this may hold. In causal terms, however, individual information behaviour does not cause the group's information-sharing culture; it helps explain the individual's acceptance of that culture. Group behaviour, norms, and expectations can shape individual behaviour through acculturation and coercion. FSSM requires the context-first structure: Management and Culture upstream; Self-Efficacy and Empowerment intermediate; Information Behaviour downstream.</p>
             </div>
         </section>
 
@@ -177,15 +181,15 @@
                 </div>
                 <div class="glass-card">
                     <h3>2. Typical Necessity (&varepsilon;)</h3>
-                    <p><em>"If $Y$ is high, $X$ is rarely below its bottleneck."</em> Identifies non-compensatory gatekeepers: conditions without which high outcomes are uncommon.</p>
+                    <p><em>&varepsilon; is the exception rate among high-outcome cases.</em> Low &varepsilon; supports a non-compensatory bottleneck claim.</p>
                 </div>
                 <div class="glass-card">
                     <h3>3. Probabilistic Sufficiency (&Delta; / Uplift)</h3>
-                    <p><em>"Does raising $X$ above $T_X$ increase the probability of high $Y$?"</em> Probability-scale contrast on an IPW-balanced pseudo-population.</p>
+                    <p><em>"Does crossing $T_X$ increase the probability of high $Y$?"</em> Probability-scale contrast on a weighted pseudo-population under adjustment assumptions.</p>
                 </div>
                 <div class="glass-card">
                     <h3>4. Probabilistic Necessity (&beta;)</h3>
-                    <p><em>"If $X$ is below its bottleneck, high $Y$ is unlikely."</em> Converts the constraint into a concrete, counterfactual risk statement.</p>
+                    <p><em>"If $X$ is below its bottleneck, high $Y$ is unlikely."</em> Estimates high-outcome probability when the required level is not met.</p>
                 </div>
             </div>
         </section>
@@ -194,15 +198,15 @@
         <section id="claims-formulas" class="reveal">
             <h2>Four causal claims: mathematical form</h2>
             <div class="glass-card">
-                <p>$T_X$ and $T_Y$ anchor all four claims. $\Pr^*$ denotes probability on the IPW-balanced pseudo-population; $w_i$ are normalized case weights. Decision thresholds for $\alpha$, $\varepsilon$, $\beta$ are not fixed; they depend on decision context and may be benchmarked analogously to classical effect-size conventions.</p>
+                <p>Let $b(y_i)=(T_X/T_Y)y_i$ be the case-specific bottleneck implied by the NCA ceiling. $T_Y$ is the study's outcome target. $T_X$ is the NCA-derived bottleneck for that target. $\Pr^*$ denotes probability on the weighted pseudo-population and requires explicit identification assumptions.</p>
                 <div class="formula-grid">
                     <div class="formula-block">
                         <p class="formula-label">Typical sufficiency (&alpha;)</p>
                         $$\alpha = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq T_X)\,\mathbf{1}(y_i \geq T_Y)}{\displaystyle\sum_i w_i \,\mathbf{1}(x_i \geq T_X)}$$
                     </div>
                     <div class="formula-block">
-                        <p class="formula-label">Typical necessity (&varepsilon;)</p>
-                        $$\varepsilon = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)\,\mathbf{1}(x_i < T_X)}{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)}$$
+                        <p class="formula-label">Typical necessity exception rate (&varepsilon;)</p>
+                        $$\varepsilon = \frac{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)\,\mathbf{1}(x_i < b(y_i))}{\displaystyle\sum_i w_i \,\mathbf{1}(y_i \geq T_Y)}$$
                     </div>
                     <div class="formula-block">
                         <p class="formula-label">Probabilistic sufficiency (&Delta;)</p>
@@ -222,7 +226,7 @@
             <div class="glass-card">
                 <p>FSSM offers a flexible, dual-route design to address different analytical goals and data realities:</p>
                 <ul>
-                    <li>Route A (Latent Variable Route, PLS-SEM + NCA): Extends latent structural models. Binds structural path estimation with necessity bottleneck diagnostics to achieve both population generalization and case-wise subjective structure exploration. The latent variable route provides a sound ground for causal generalization with reversal to case-level causal detection.</li>
+                    <li>Route A (Latent Variable Route, PLS-SEM + NCA): Extends latent structural models. It supports population-level modelling through structural paths while attaching necessity bottlenecks and case-level diagnostics under explicit assumptions.</li>
                     <li>Route B (Raw Composite Route, NCA + Case Weighting): Bypasses latent modelling using raw composites. NCA identifies the threshold $T_X$ for a specific desired $T_Y$, and every respondent is located on the resulting fuzzy membership scale. Enables a case-level "finding people" approach, allowing researchers to study teams, even small ones, to diagnose local information needs and behaviours precisely.</li>
                 </ul>
             </div>
@@ -233,11 +237,11 @@
             <h2>Double subjectivity: entropy weighting &amp; IPW</h2>
             <div class="glass-card">
                 <p>FSSM addresses subjectivity at two distinct levels, each requiring its own correction:</p>
-                <p>1. Measurement subjectivity: respondents interpret survey items through disciplinary and role-based lenses. Entropy weighting up-weights indicators with discriminating, informative response patterns and down-weights noisy ones:</p>
-                $$w_j^{\mathrm{EW}} \;\propto\; H(j) = -\sum_k p_{jk}\log p_{jk}$$
+                <p>1. Measurement subjectivity: respondents interpret survey items through disciplinary and role-based lenses. Entropy weighting up-weights indicators with more discriminating information when forming construct scores:</p>
+                $$E_j=-\frac{1}{\log K}\sum_k p_{jk}\log p_{jk}, \qquad d_j=1-E_j, \qquad w_j^{\mathrm{EW}}=\frac{d_j}{\sum_l d_l}$$
                 <p>2. Confounding: observed group differences may reflect discipline, seniority, or institutional role rather than the construct of interest. Inverse Probability Weighting re-balances the sample to approximate a pseudo-randomized condition:</p>
                 $$w_i^{\mathrm{IPW}} = \frac{D_i}{\hat{e}(c_i)} + \frac{1-D_i}{1-\hat{e}(c_i)}, \qquad \hat{e}(c_i) = \Pr(D_i = 1 \mid c_i)$$
-                <p>Together, these two weighting layers let FSSM move from association to a principled approximation of intervention contrasts under explicitly stated identification assumptions.</p>
+                <p>Together, these layers support adjusted threshold contrasts under measured-confounding, overlap, and model-specification assumptions.</p>
             </div>
         </section>
 
@@ -245,12 +249,13 @@
         <section id="fuzzy-concept" class="reveal">
             <h2>Fuzzy concept &amp; subjectivity mapping</h2>
             <div class="glass-card">
-                <p>Continuous latent and composite scores are mapped onto a fuzzy membership interval $[0, 1]$ relative to empirical thresholds and bottlenecks:</p>
+                <p>Construct scores are rescaled to 0-100 and mapped onto fuzzy membership intervals relative to empirical thresholds and bottlenecks:</p>
                 <ul>
-                    <li>$\mu_S(x)$: the degree to which an individual case meets the necessary context bottleneck, showing how close a case is to crossing the enabling threshold.</li>
+                    <li>$\mu_N(x,y)$: degree to which an individual case meets the case-specific necessary context bottleneck.</li>
+                    <li>$\mu_S(x)$: degree to which the condition exceeds the target bottleneck for sufficiency contrasts.</li>
                     <li>$\mu_Y(y)$: the degree of outcome achievement relative to the desired target $T_Y$.</li>
                 </ul>
-                <p>This fuzzy mapping prevents cases near arbitrary cutoffs from distorting the results. It honours individual autonomy by showing how close or far each case is from the necessary threshold, enabling person-in-context interpretation without binary categorization.</p>
+                <p>This fuzzy mapping preserves case heterogeneity by showing how close or far each case is from the necessary threshold, enabling person-in-context interpretation without binary categorization.</p>
             </div>
         </section>
 
@@ -258,11 +263,12 @@
         <section id="mapping-formulas" class="reveal">
             <h2>Fuzzy membership: mathematical form</h2>
             <div class="glass-card">
-                <p>Membership in the necessary bottleneck for condition $X$, showing how close a case is to the enabling threshold $T_X$:</p>
-                $$\mu_S(x_i) = \begin{cases} 0 & x_i = 0 \\[6pt] \dfrac{x_i}{T_X} & 0 < x_i < T_X \\[10pt] 1 & x_i \geq T_X \end{cases}$$
+                <p>On 0-100 construct scores, with $b(y_i)=(T_X/T_Y)y_i$:</p>
+                $$\mu_S(x_i)=\max\!\left(0,\min\!\left(1,\frac{x_i-T_X}{100-T_X}\right)\right)$$
+                $$\mu_N(x_i,y_i)=\min\!\left(1,\frac{x_i}{b(y_i)}\right)$$
                 <p>Degree of outcome achievement for $Y$:</p>
                 $$\mu_Y(y_i) = \min\!\left(1,\; \frac{y_i}{T_Y}\right)$$
-                <p>The pair $\bigl(\mu_S(x_i),\,\mu_Y(y_i)\bigr)$ locates every respondent on what we might call a self-treatment scale. Rather than a discrete, time-bounded intervention, the institutional environment is an ongoing exogenous context that continuously shapes each individual's endogenous subjective structure. Threshold-seeking replaces point-treatment logic: the question is not "did an intervention occur?" but "how far is this person from the enabling threshold?", closer in spirit to Li and Pearl's Probability of Necessity and Probability of Sufficiency, but expressed as a graded, person-in-context reading over an ongoing environmental condition.</p>
+                <p>The pair $\bigl(\mu_N(x_i,y_i),\,\mu_Y(y_i)\bigr)$ locates every respondent on a context-threshold plane. The institutional environment is an ongoing context that continuously shapes each individual's subjective structure. Threshold-seeking replaces point-treatment logic: the question is not "did an intervention occur?" but "how far is this person from the enabling threshold?"</p>
             </div>
         </section>
 
